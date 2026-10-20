@@ -39,9 +39,11 @@ the author's license choice itself is resolved, not awaiting another selection.
 The article, supplement and experimental assets are separate, excluded from this
 code-only package and NOT licensed by this software decision. Ramin Abbaszadi's
 manuscript coauthorship is unchanged. This does not select a publication license
-for the article or authorize public GitHub/Zenodo deposit. Scoped import/input/
-preparation checks have passed; full fit/clean-install proof and final release
-review are separate. No publication, repository URL or DOI is claimed. See
+for the article. Luay subsequently chose to publish the code himself;the real
+repository and reserved software DOI are documented in README.md. That choice
+does not expand ownership or third-party rights. Scoped import/input/preparation
+and file checks have passed;full fit/clean-install proof remains unverified.
+The Zenodo draft is not yet published at preparation of this snapshot. See
 THIRD_PARTY.md for the provenance and rights-review boundary.
 
 Official sources checked16October2026:

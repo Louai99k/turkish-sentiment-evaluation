@@ -1,14 +1,14 @@
 {
   "schema_version": "code-package-manifest-v2",
   "package": "Turkish sentiment evaluation code",
-  "status": "code_only_candidate_file_reviewed_not_published",
+  "status": "code_only_release_candidate_zenodo_draft_reserved",
   "scope": "project code, non-result configurations and instructions only",
   "project_license": "PolyForm-Noncommercial-1.0.0",
   "license_scope": "original_project_work_Luay_is_entitled_to_license",
   "required_notice": "Software developed by Luay Kelani. Retain this attribution when redistributing any part of the software.",
-  "external_publication_authorized": false,
-  "repository_url": null,
-  "doi": null,
+  "external_publication_authorized": true,
+  "repository_url": "https://github.com/Louai99k/turkish-sentiment-evaluation",
+  "doi": "10.5281/zenodo.23509979",
   "research_assets_included": false,
   "verification_scope": {
     "selected_local_imports_and_synthetic_checks": true,
@@ -30,624 +30,635 @@
   "files": [
     {
       "path": ".gitignore",
-      "size_bytes": 453,
       "sha256": "fe6c52cab34f968a5aec025c68d4ec03db223eee14be5af1c1f4fbbc24336730",
+      "size_bytes": 453,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
+      "path": "CITATION.cff",
+      "sha256": "01d285318bbbb72c979b810e1f535da1ad610e71c14d41bbcd894a6a992ddb4a",
+      "size_bytes": 794,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update"
+    },
+    {
       "path": "EXCLUSIONS.md",
-      "size_bytes": 3224,
       "sha256": "53445cd6c8264cfbe65197d4f18ca1f39b40b3fa860ea375671042e7df25d0f9",
+      "size_bytes": 3224,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "LICENSE.md",
-      "size_bytes": 901,
       "sha256": "9b4f7e6199fcef2b4240fc5a14508eda1d60108d01e4c3114c88d66ae3a50674",
+      "size_bytes": 901,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "LICENSING.md",
-      "size_bytes": 3015,
-      "sha256": "655494a675b28a3348dd4ad1cd125d1152c70293b3314b4d7a31b8b2235643a9",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "c3f16e67ebfa0d6a3a16fa535535e57a5af235ef3e8c0ac33ea1adcd3ae9271e",
+      "size_bytes": 3170,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "NOTICE",
-      "size_bytes": 468,
       "sha256": "ecd6a06bb4384ac7c117f208657a181a1b79720ae9a3923988c2fa14955c232a",
+      "size_bytes": 468,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "README.md",
-      "size_bytes": 3701,
-      "sha256": "4c9f9140889b8bdc3e00827e5580fc0cbe0a2c911e555cf33f41473468c9ab93",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "123ddc41932cfd187afa40c386b8896711f6a4728f3ab4360cfb7e67895b4af8",
+      "size_bytes": 4474,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "RELEASE_REQUIREMENTS.md",
-      "size_bytes": 6720,
-      "sha256": "630486019a135e91291e23e8953027682956665045d30b2f49829d03420fbe69",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "97435dd1d3402277829c1323bf26c42f40d44e17950149b0a445fd816e74c533",
+      "size_bytes": 8432,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "SECURITY.md",
-      "size_bytes": 1732,
       "sha256": "ef4f621163fbae322e0005f3c639919b9b79ad14bec79cc6614029d87ef0a724",
+      "size_bytes": 1732,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "THIRD_PARTY.md",
-      "size_bytes": 2486,
-      "sha256": "eeb115182d8e82053655104e8063ba2672152e48cb664980695f784792bf145a",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "d5395d37d6c37c7305d5eda195d401c624de19e3d5f408aa840795030cde42f9",
+      "size_bytes": 2675,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/audits/winvoker_preprocessing_profiles_v2.json",
-      "size_bytes": 1295,
       "sha256": "12c288c942eaafbd7091eb4ba14054192a62a70b45cf44ee8c3e78f0ed6b40e2",
+      "size_bytes": 1295,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/audits/winvoker_tokenizer_lengths_v1.json",
-      "size_bytes": 1668,
       "sha256": "9e9ffebe021a6c81f612f7a1969b8581d86f356743596623abf4c1acf7f3edcd",
+      "size_bytes": 1668,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/datasets/winvoker_historic_v2.json",
-      "size_bytes": 1617,
       "sha256": "c7710839be0f9a92e982e7d0f9f11bf8474c55ab646540fea88ac4f6c2584d6f",
+      "size_bytes": 1617,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/berturk_base_cased_mlp128_v1.json",
-      "size_bytes": 1261,
       "sha256": "be85378fa74b32b41fb4c0964dd2f36edb00dbd9ac35b5af0f1e7ddc8e1ebdfe",
+      "size_bytes": 1261,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/berturk_base_cased_mlp256_v1.json",
-      "size_bytes": 1261,
       "sha256": "980cbd039e6fb4e10b58755496e79116a85123ef7678b8d20f46008e4d49ca81",
+      "size_bytes": 1261,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/berturk_base_cased_v1.json",
-      "size_bytes": 1223,
       "sha256": "805299457ef264040fde89b14f5b7736e63ffb0d59eff12a3481fb343af18757",
+      "size_bytes": 1223,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/berturk_base_uncased_v1.json",
-      "size_bytes": 1333,
       "sha256": "5c879055144d71009af1cd56d4c664bbe8f12c64d89c4e0693d869db0aebc483",
+      "size_bytes": 1333,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/convberturk_base_cased_v1.json",
-      "size_bytes": 1735,
       "sha256": "44c1f2a35857175b9ca3e97a799532af72392c872f524b84104c711e04e102bd",
+      "size_bytes": 1735,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/distilberturk_base_cased_v1.json",
-      "size_bytes": 1750,
       "sha256": "00d74ea5669d1aadf892d2e0e1b98189d970e8056a9c82e3daf2a3899c6dd0ec",
+      "size_bytes": 1750,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/mbert_base_multilingual_cased_v1.json",
-      "size_bytes": 1370,
       "sha256": "72380478229268b2aa27dd46f28c628d4549bf53887656c28c8f864e00d4a721",
+      "size_bytes": 1370,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/turkish_electra_base_cased_v1.json",
-      "size_bytes": 1815,
       "sha256": "e5a3f6b19a9e6abc7e03dba28e235a73f9a7ab3be93016ff10b5f8e208f2540d",
+      "size_bytes": 1815,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/models/xlm_roberta_base_v1.json",
-      "size_bytes": 1375,
       "sha256": "fbacbc12c57657e8e0923731b955fe5b48e8fcfb202aea8b5382f475ac640e2d",
+      "size_bytes": 1375,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/preprocessing/winvoker_canonical_emoji_preserve_v2.json",
-      "size_bytes": 2391,
       "sha256": "695f5bc123362db3c7a011f1ae95a2363869cd35a4b2860eacc54c8e37f0bdc5",
+      "size_bytes": 2391,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/preprocessing/winvoker_canonical_url_placeholder_v1.json",
-      "size_bytes": 1950,
       "sha256": "b724303a96b6b526052dcc10a5d45aa988e340807e01da834ec903582b8ddd56",
+      "size_bytes": 1950,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/preprocessing/winvoker_canonical_v1.json",
-      "size_bytes": 1878,
       "sha256": "ab69f95592e93a9afce3709dfa88d7dd5722afab556e262f353a6265246b8561",
+      "size_bytes": 1878,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/preprocessing/winvoker_minimal_strip_v1.json",
-      "size_bytes": 660,
       "sha256": "62da34b49c6d53b802ad54fe964800d9febccf8b6c068cdc20d4de622206d540",
+      "size_bytes": 660,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "configs/reproduction/accepted_setups_v1.json",
-      "size_bytes": 7766,
       "sha256": "698fef59bdbaeded9955c9858142f1aeff3e428edb4c0303775e63d207b1c410",
+      "size_bytes": 7766,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "docs/ENVIRONMENT.md",
-      "size_bytes": 2420,
       "sha256": "359a2fa913edd6d874977eb31c6c322a6d07e7ab8a47f2f67ff751d87828aad3",
+      "size_bytes": 2420,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "size_bytes": 8255,
-      "sha256": "b3dbfef42d746d9a21b305c0adfd9995eeb166ea9503e3f288e019bfc40780bb",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "0e1bb24835ead1375d4a2643511f622ed2304cd8983f2cc2535f5f674a2f2102",
+      "size_bytes": 8384,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "docs/REPRODUCTION_RECIPES.md",
-      "size_bytes": 4823,
-      "sha256": "d283a976fb1320e9152320a1f66e98ad55fa29400cba2e066b7b4be907eb7d81",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "6debd91f89a7b22bcc8cfcccc39e1f72af0fd7536f6a1e31f790a04193bb2fc7",
+      "size_bytes": 4906,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "requirements-observed.txt",
-      "size_bytes": 707,
       "sha256": "89585751fa5216c19823fec72e6abfc939514d843602968dd6790536db580ab7",
+      "size_bytes": 707,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/aggregate_berturk_loss_ablation_v2.py",
-      "size_bytes": 26865,
       "sha256": "4960fb37f208dba470ef87248e755578ae5069757f8b993262e3fb808b19bd51",
+      "size_bytes": 26865,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/aggregate_berturk_pinned_loss_ablation.py",
-      "size_bytes": 10720,
       "sha256": "b919b0b1788001507e53beba3d7632085f0b71c58fbed2e5d86e914ae90614a7",
+      "size_bytes": 10720,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/aggregate_bilstm_protocol_v2.py",
-      "size_bytes": 16626,
       "sha256": "8543282c0d200437ac7ba38077513f47271e0a4efe8c14296e0ecf44beeae1de",
+      "size_bytes": 16626,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/aggregate_final_transformer_seeds.py",
-      "size_bytes": 15527,
       "sha256": "1c414b8fb6ffe04445e17c1512e3dfc56689e572e0aa1147c7055c88a92bcbbd",
+      "size_bytes": 15527,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/analyze_berturk_roc_pr.py",
-      "size_bytes": 11863,
       "sha256": "31838bc084221d54e30c74f7d48aebdbcdefa95964cfe039fef989f5ffdacea6",
+      "size_bytes": 11863,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_cpu_refit_inventory.py",
-      "size_bytes": 9612,
       "sha256": "25143a77f77a9bd0d7602414b3329ff629b25df9a6e02d4fc31fcb71ce918514",
+      "size_bytes": 9612,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_dataset_integrity.py",
-      "size_bytes": 26442,
       "sha256": "80fe5da5949e3c9ccd0782937f9378cdd3b2647b3d09af2396b6452d096d9442",
+      "size_bytes": 26442,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_historic_split_lineage.py",
-      "size_bytes": 34783,
       "sha256": "50c6a0a5fbe7cbd85d66cc67be26465c0e7aca49d6f627fc65be086e19ac33fd",
+      "size_bytes": 34783,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_preprocessing_profiles.py",
-      "size_bytes": 18152,
       "sha256": "dd4d47a9ff2d435020790d78a3981c022eebe2a85e9cd79eee844e91efe0faba",
+      "size_bytes": 18152,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_professor_figure_pdfs.py",
-      "size_bytes": 11587,
       "sha256": "2807226f900bf200e39dc73d68db8a751c4a323c69d937a5c27f558c40be43a2",
+      "size_bytes": 11587,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_teke_overlap.py",
-      "size_bytes": 16841,
       "sha256": "e0b0c545a5fe6b58bf8abf4f6132e48766b48254edf2e68c520b6f2834f7d5fb",
+      "size_bytes": 16841,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_tokenizer_lengths.py",
-      "size_bytes": 21227,
       "sha256": "a3b1172c11147c2192932dbf7a12b7a7f3015145f594e6a83aa22d7901597809",
+      "size_bytes": 21227,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/audit_winvoker_polarity_inputs.py",
-      "size_bytes": 10471,
       "sha256": "1c46c307f6fb3d2bc173519e0abbd6b9b8b53f9a393f8049601ae46c76bf0291",
+      "size_bytes": 10471,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/berturk_replacement_contract.py",
-      "size_bytes": 3743,
       "sha256": "b2781592e064449f88dda87dc081f430e46258f2d76171859dadcbd9e3f919e1",
+      "size_bytes": 3743,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/berturk_replacement_execution_contract.py",
-      "size_bytes": 4333,
       "sha256": "cb60f70f31d55e7bfbeb9f98e35b9c4dd454c04726ea55c43dc148725d3bea55",
+      "size_bytes": 4333,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/calculate_teke_polarity_metrics.py",
-      "size_bytes": 8643,
       "sha256": "4980d17e737400e8d66c811e4a2a550aee6c008e7ba8b241b7a534e1b73d5dc8",
+      "size_bytes": 8643,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/calculate_winvoker_polarity_metrics.py",
-      "size_bytes": 13353,
       "sha256": "1f09edbbc85dec4e6eb55ec711ac13f498c050454e6f707b48fa43cc508f3b9f",
+      "size_bytes": 13353,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/compare_multilingual_paired_seeds.py",
-      "size_bytes": 11466,
       "sha256": "f7190bacf62302209cdbfe2c3cce2e8702cef94d2200b76855b492e126d03944",
+      "size_bytes": 11466,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_berturk_qualitative.py",
-      "size_bytes": 16762,
       "sha256": "5872823ecde954931a62ce473f6de8005a9346dfc1db6768ec35a8424f6e72d8",
+      "size_bytes": 16762,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_professor_teke_bilstm_scores.py",
-      "size_bytes": 12803,
       "sha256": "c770414290a894be2ee56822d14ce1327622233916c7fac4c8ed5f1aa27ef259",
+      "size_bytes": 12803,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_professor_teke_svm_scores.py",
-      "size_bytes": 13432,
       "sha256": "fdef076648b6a1c4aa818c41e3b0ca8db69371d48e8039da17088e882d684917",
+      "size_bytes": 13432,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_professor_teke_transformer_scores.py",
-      "size_bytes": 15347,
       "sha256": "1e1c7349ce82cf5ec62f9d1d003704c49c9b93c4c1ffddb500dbfdbfca644adf",
+      "size_bytes": 15347,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_professor_teke_xlmr_scores.py",
-      "size_bytes": 4211,
       "sha256": "ae6c0cdcfd81439e22b72f05ff9d9544ebc342726b3bd9dd4053d24769e6a537",
+      "size_bytes": 4211,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/extract_winvoker_svm_scores.py",
-      "size_bytes": 12192,
       "sha256": "3265c0f5d03fe8a4334f98f6196b6dc9d18098b3c0efbf28f2b4e0ee51387a47",
+      "size_bytes": 12192,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/preflight_teke_external_inference.py",
-      "size_bytes": 10481,
       "sha256": "5af73968c187b9f2c60558bd0bc525fabe37ababeb3b0a46e99a4b3f6ad8f849",
+      "size_bytes": 10481,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/project_berturk_tfidf.py",
-      "size_bytes": 14857,
       "sha256": "316614d77d89b264ba9c79c4eb9a2283d409e800d49b369e9eedfe4ef16961e8",
+      "size_bytes": 14857,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/promote_professor_figure_repairs.py",
-      "size_bytes": 6401,
       "sha256": "dccfec116c0389cd26f9600a2c36bfe242b6b924c34f4f4e2bca21bc8fdf375d",
+      "size_bytes": 6401,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_baseline_experiment.py",
-      "size_bytes": 8079,
       "sha256": "cd6e5dce40a6776e9672d96165e61a242bad9e209fe66679269b2844196bdb42",
+      "size_bytes": 8079,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_berturk_experiment.py",
-      "size_bytes": 19940,
       "sha256": "a1a7a2c663b614da9368a0c7b392fc940447d155d93bde318d853e24f0cd649a",
+      "size_bytes": 19940,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_berturk_pinned_comparisons.py",
-      "size_bytes": 15243,
       "sha256": "511ed827d0d46410f6cba8e73d23b38d60c7f3cc7825a18c8245cf749dd1d8fd",
+      "size_bytes": 15243,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_berturk_provenance_replacement.py",
-      "size_bytes": 8582,
       "sha256": "a88b2a74f541629eae47179871001851bd43482c34f46f744b2616d53dcf2a34",
+      "size_bytes": 8582,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_bilstm_protocol_v2.py",
-      "size_bytes": 21395,
       "sha256": "91f3a6d4ded08d546e3f7e6bf7e85a5c39b10b5937ef162ca5dbb26af809d609",
+      "size_bytes": 21395,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_fasttext_train_vocab_refit.py",
-      "size_bytes": 21701,
       "sha256": "e576f965c9635169178622a6f348ff500b224535651fd0b8fb7719b9f5d6bb02",
+      "size_bytes": 21701,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_reproduction.py",
-      "size_bytes": 17919,
       "sha256": "29e84347c126f03fa7c43a88fa2f4a9f672c5e19d2402f2f96fe605b3b41179b",
+      "size_bytes": 17919,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_stage2_neural_baselines.py",
-      "size_bytes": 23242,
       "sha256": "b7fde6495ca97bdcb8181647c2da91f502becb0b367d83da817c05257f837389",
+      "size_bytes": 23242,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_svm_complete_records.py",
-      "size_bytes": 16560,
       "sha256": "ef68c36fcc9e905c516dbc8c3169f40f3d65dfd47ca781daf2912f01d39128b4",
+      "size_bytes": 16560,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_teke_direct_transfer.py",
-      "size_bytes": 15978,
       "sha256": "d1d8c648fd7a0a2231a0dd37d70751636d0b86158d19be80cab764ea833f805f",
+      "size_bytes": 15978,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/run_transformer_experiment.py",
-      "size_bytes": 36454,
       "sha256": "106b0c5c42b75bfd1c04253aa909d5cf4bea861bbf09a65f50318b5d97879a44",
+      "size_bytes": 36454,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/significance_tests.py",
-      "size_bytes": 69064,
       "sha256": "c773baf9264d261ee90f993a6364dcf414d17f69f1bce6a168b8b198de9bec5d",
+      "size_bytes": 69064,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "scripts/teke_polarity_inputs.py",
-      "size_bytes": 6595,
       "sha256": "9ec7d45f353f792b7eb180531464f8209148f8ac42a64abd72d7b16207bd60af",
+      "size_bytes": 6595,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/baseline.py",
-      "size_bytes": 5748,
       "sha256": "9e371363e1528bc805a05916fd8c525da749f1d18a8ce83b0445158f6442f9c8",
+      "size_bytes": 5748,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/data_loader.py",
-      "size_bytes": 10928,
       "sha256": "2dd7e3dfa33b14132fa764b27230416ff3a27e58f66b6f5f90d5cc0a683796da",
+      "size_bytes": 10928,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/evaluate.py",
-      "size_bytes": 7861,
       "sha256": "ead0d5cb7c50da830de5e54c540b4d6c481ffa61638e02d0df24d0f325ddb511",
+      "size_bytes": 7861,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/experiment_artifacts.py",
-      "size_bytes": 14718,
       "sha256": "85df74094f20bd0f28e452338a2e56187142de105e8d157061a6000fc7b7718a",
+      "size_bytes": 14718,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/focal_loss.py",
-      "size_bytes": 1787,
       "sha256": "b77fc0ab836df38d56125bb5920b8873383d4bf010bd1242f940025a0cb5bd7e",
+      "size_bytes": 1787,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/model.py",
-      "size_bytes": 4505,
       "sha256": "d71079f23cbea154fd5a1cb8bb444245fd08f75b3ccbaae5b7d3457704f2bebe",
+      "size_bytes": 4505,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/preprocessing.py",
-      "size_bytes": 14241,
       "sha256": "210f24e37c536f9d913fa4c87c9667f7eafef26c28bf05532b246cf984f4c019",
+      "size_bytes": 14241,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/protocol_constants.py",
-      "size_bytes": 1571,
       "sha256": "b091cdb7ff5722c38d2f9a4b678c5036b66aea7ecb13b7f3aab562ec1c3819d5",
+      "size_bytes": 1571,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/protocol_metrics.py",
-      "size_bytes": 9744,
       "sha256": "8424f8bcfcd131d949506e31ae0aebbd23a4f8645bcec0adf4c37f6a8af45f39",
+      "size_bytes": 9744,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/protocol_predictions.py",
-      "size_bytes": 8668,
       "sha256": "6b5ffdc463ff779e73048a8b116c47785dcf2348e942feb4412336c1175a5002",
+      "size_bytes": 8668,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/reproduction.py",
-      "size_bytes": 6856,
       "sha256": "c13af3ffc46bc20a5dbb79e4f64eef228a4244460fde95278f3f05b1c8ff07e8",
+      "size_bytes": 6856,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/train.py",
-      "size_bytes": 15194,
       "sha256": "f263ca648832ab69aa556a1ab7de0844893f42ed17cb79dfd566d8c03449eb61",
+      "size_bytes": 15194,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "src/transformer_model.py",
-      "size_bytes": 3480,
       "sha256": "fb952925a1066b5fe05559b3f0ceb18bd2ce35ed98a18ffcd0d9fd133f8995cb",
+      "size_bytes": 3480,
       "provenance": "unchanged_original_scientific_source_or_config",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "tools/check_reproduction.py",
-      "size_bytes": 8278,
       "sha256": "a7e4977cb5faef41eff4ceed14be084544be480962197eb9db738cf37adfa046",
+      "size_bytes": 8278,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "tools/check_workspace.py",
-      "size_bytes": 7197,
       "sha256": "cec54c04d75354d62a4ba80472564125cad7a3165bb13f59b34f070e72b0bdaf",
+      "size_bytes": 7197,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "tools/create_workspace.py",
-      "size_bytes": 2970,
-      "sha256": "bea7a47f2947a9f574733faab5f2f279b79ea96e2e922a8ace2fbe26cd7669b0",
-      "provenance": "curated_project_source_configuration_or_instruction",
+      "sha256": "0fee677c15ccfbe9691c64171a389dbc2cc576b3bfa7e85f709ef1e561c75e34",
+      "size_bytes": 2986,
+      "provenance": "release_documentation_citation_or_workspace_copy_allowlist_update",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "tools/reconstruct_profile_fingerprints.py",
-      "size_bytes": 1448,
       "sha256": "53e63f1f0f83cb85b590cb0911a25f092592d5395a5b04d63c7a8a28976eeb8a",
+      "size_bytes": 1448,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "tools/reconstruct_winvoker_inputs.py",
-      "size_bytes": 4463,
       "sha256": "066b50c8d400d692548c01cf733edabeef1a672b113fa87867cbb06ba7a09260",
+      "size_bytes": 4463,
       "provenance": "curated_project_source_configuration_or_instruction",
       "rights_scope": "author_reported_rights_for_original_work_not_independent_ownership_proof"
     },
     {
       "path": "release_manifest.json",
       "role": "this code-package metadata",
-      "self_hash": "recorded only in detached private final inventory to avoid recursion"
+      "self_hash": "recorded only in detached private release inventory to avoid recursion"
     }
-  ]
+  ],
+  "software_version": "1.0.0",
+  "publication_actor": "Luay Kelani; assistant performs no publication",
+  "doi_status": "author_reserved_not_registered_until_zenodo_publication",
+  "zenodo_publication_verified": false,
+  "release_workflow": "manual_single_source_zip_no_github_oauth_required"
 }

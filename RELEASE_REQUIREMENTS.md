@@ -1,7 +1,30 @@
-# Package A release gates
+# Software release status and historical preparation record
 
-Local preparation authorized; external publication NOT authorized.
-No invented URL, DOI, release date or joint-package approval.
+## Current release preparation — 20 October 2026
+
+Luay chose to publish this code-only package himself and pushed the original
+89-file candidate to https://github.com/Louai99k/turkish-sentiment-evaluation .
+The selected license and Required Notice remain unchanged. The candidate passed
+the scoped final file review, including original source/config identities and
+selected secret/notice/link checks; this is not independent legal/security
+clearance or proof of full fitting/clean-install reproducibility.
+
+Version1.0.0 metadata adds CITATION.cff and updates release documentation. Its DOI
+10.5281/zenodo.23509979 is author-reserved for an UNPUBLISHED Zenodo draft, not an
+article identifier or evidence of an available archive. No release date is invented.
+The author must publish the exact reviewed code-only ZIP manually on Zenodo;
+GitHub OAuth integration is not needed. No datasets,weights,results,article or
+supplement may be added. The package manifest must be refreshed after metadata
+edits; the detached ZIP hash/inventory stay outside the distributable package.
+
+The earlier gates below are a HISTORICAL preparation checkpoint, retained to
+explain scope and limitations. Their old counts/unchecked boxes/authorization
+status are not current release status. Publication of software does not approve
+the manuscript,settle an unknown journal or imply additional third-party rights.
+
+## Historical gates before the author's publication decision
+
+At that checkpoint local preparation was authorized; external publication was not.
 
 ## Accepted decisions (do not reopen)
 
@@ -96,6 +119,10 @@ Their acceptance may require manuscript/instruction alignment, but they are NOT
 supporting-file deliverables for this public package. No result-release choice
 is pending under package A.
 
-Execution: user runs multiline Windows PowerShell/Docker commands with backticks,
+Historical execution agreement: user runs multiline Windows PowerShell/Docker commands with backticks,
 UTF-8 `.tmp\\log.txt`, captured exit status and durable JSON/CSV/reports in
 research/audit locations outside this staging package. No command until ready.
+
+For Git and code-only packaging,the author subsequently chose direct WSL commands.
+All actual processing remains author-executed;Codex writes source and inspects
+returned receipts. Do not execute historical training scripts merely to inspect them.

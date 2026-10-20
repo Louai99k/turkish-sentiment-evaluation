@@ -39,4 +39,7 @@ needed for the present code-only boundary; adding any requires a fresh review.
 - Teke data, externally evaluated checkpoints/masks and historical private gates
   are excluded. Code paths referring to them do not supply redistribution rights.
 
-No repository URL, DOI, publication authorization or legal clearance is asserted.
+The real repository and author-reserved software DOI are listed in README.md.
+Luay is performing publication himself. Neither that decision nor the reserved
+DOI constitutes independent legal clearance;the Zenodo draft remains unpublished
+at preparation of this snapshot.

@@ -76,6 +76,7 @@ from this package. This is not proof of complete model-fitting reproducibility.
   post-selection workflows with stable sample lineage. Do not use them to choose
   models against external or held-out test outcomes.
 
-No public-release approval, training authorization, repository URL or Zenodo DOI
-is implied. These are independently identified replications, never replacements
+No model-fitting authorization is implied by these recipes. Current repository
+and reserved software DOI are listed in ../README.md. The Zenodo draft is not
+claimed published. These are independently identified replications, never replacements
 for the accepted paper evidence or frozen external model set.

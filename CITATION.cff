@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: >-
+  Citation metadata for software version 1.0.0. The Zenodo DOI is reserved;
+  registration is pending publication of the archive. Once available, please
+  cite this software when using it in research.
+type: software
+title: "Turkish Sentiment Evaluation — Code and Configurations"
+authors:
+  - family-names: "Kelani"
+    given-names: "Luay"
+    affiliation: "OSTİM Technical University"
+version: "1.0.0"
+doi: "10.5281/zenodo.23509979"
+repository-code: "https://github.com/Louai99k/turkish-sentiment-evaluation"
+url: "https://github.com/Louai99k/turkish-sentiment-evaluation"
+license: "PolyForm-Noncommercial-1.0.0"
+keywords:
+  - Turkish sentiment analysis
+  - natural language processing
+  - text classification
+  - cross-dataset evaluation
+  - reproducibility

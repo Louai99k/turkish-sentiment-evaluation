@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DIRECTORIES = {"src", "scripts", "configs", "docs", "tools"}
 TOP_FILES = {".gitignore", "README.md", "LICENSE.md", "NOTICE", "LICENSING.md",
              "EXCLUSIONS.md", "RELEASE_REQUIREMENTS.md", "THIRD_PARTY.md", "SECURITY.md",
-             "release_manifest.json", "requirements-observed.txt"}
+             "release_manifest.json", "requirements-observed.txt", "CITATION.cff"}
 
 
 def main():

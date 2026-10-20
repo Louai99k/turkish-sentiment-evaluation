@@ -101,4 +101,6 @@ dispatch is implemented with bounded user checks pending. See
 - External results use the frozen checkpoints and evaluation masks. New internal
   provenance fits do not retrospectively change the external model roster.
 
-No publication, repository URL or DOI is asserted by these instructions.
+Current repository and reserved software DOI are listed in ../README.md. These
+reconstruction instructions do not establish publication of the Zenodo draft or
+numerical reproduction of unexecuted fits.

@@ -59,6 +59,18 @@ Read [LICENSE.md](LICENSE.md), [LICENSING.md](LICENSING.md),
 retained third-party rights and safe local use. Dataset/model terms are separate;
 this is not unrestricted permissive open source or a blanket ownership claim.
 
-This is a locally prepared candidate, not an authorized public deposit. Final
-file review and publication gates are in [RELEASE_REQUIREMENTS.md](RELEASE_REQUIREMENTS.md).
-No repository URL, Zenodo DOI or publication approval is invented.
+## Repository, citation and archive status
+
+Code repository: https://github.com/Louai99k/turkish-sentiment-evaluation .
+Software version: **1.0.0**. See [CITATION.cff](CITATION.cff) for citation metadata.
+Zenodo DOI **10.5281/zenodo.23509979** was reserved by the author for this software
+release. At preparation of this snapshot the Zenodo record is still an unpublished
+draft; DOI reservation is not evidence that the archive is publicly available.
+The archive will be accessible at https://doi.org/10.5281/zenodo.23509979 after
+publication. No article DOI or publication date is inferred from this identifier.
+
+Luay Kelani developed the software. Ramin Abbaszadi provided supervision and
+methodological guidance; this software citation does not change article authorship.
+Luay is performing the code-only release himself. The documented verification
+limits above remain unchanged; release does not certify unexecuted model fits.
+See [RELEASE_REQUIREMENTS.md](RELEASE_REQUIREMENTS.md) for release boundaries.
