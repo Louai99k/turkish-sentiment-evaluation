@@ -1,0 +1,30 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "convberturk",
+  "model_id": "dbmdz/convbert-base-turkish-cased",
+  "model_revision": "ba09bc2348482fd46dea9083345a9e7aaffeaa7d",
+  "tokenizer_id": "dbmdz/convbert-base-turkish-cased",
+  "tokenizer_revision": "ba09bc2348482fd46dea9083345a9e7aaffeaa7d",
+  "license": "MIT",
+  "architecture_family": "ConvBERT",
+  "casing": "cased",
+  "language": "Turkish",
+  "parameter_count_display": "approximately 107M; exact project-head-inclusive count is recorded by the runtime preflight",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel first-token representation followed by the project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "first_token",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/dbmdz/convbert-base-turkish-cased",
+  "official_commit_page": "https://huggingface.co/dbmdz/convbert-base-turkish-cased/commit/ba09bc2348482fd46dea9083345a9e7aaffeaa7d",
+  "original_paper": "https://arxiv.org/abs/2008.02496",
+  "provenance_repository": "https://github.com/stefan-it/turkish-bert",
+  "metadata_audit": "outputs/audits/turkish_transformer_checkpoint_candidates_v1/artifact_manifest.json",
+  "metadata_audit_manifest_sha256": "c50986033ce951ffd6df58c9def1d8d906a4371ec207c1751edda57359810b6b",
+  "verified_on": "2026-09-19",
+  "verification_note": "Metadata-eligible cased ConvBERTurk base checkpoint; all ten immutable-revision, license, tokenizer, capacity, weight-availability, and Transformers-mapping checks passed. Weight loading and project runtime remain gated by a separate preflight."
+}

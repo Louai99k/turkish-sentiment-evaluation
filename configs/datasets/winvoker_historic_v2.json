@@ -1,0 +1,47 @@
+{
+  "schema_version": "dataset-config-v2.0",
+  "dataset_id": "winvoker/turkish-sentiment-analysis-dataset",
+  "dataset_revision": "4bd9103ad5f24d44db806d40c94c8b9ec116ad05",
+  "declared_license": "CC BY-SA 4.0",
+  "upstream_split": "train",
+  "upstream_rows": 440679,
+  "label_to_id": {
+    "Positive": 0,
+    "Negative": 1,
+    "Notr": 2
+  },
+  "label_order": [
+    "Positive",
+    "Negative",
+    "Notr"
+  ],
+  "canonical_preprocessing_profile": {
+    "profile_id": "winvoker_canonical_v1",
+    "profile_path": "configs/preprocessing/winvoker_canonical_v1.json",
+    "legacy_function_reference": "src.data_loader.clean_text",
+    "fingerprint_manifest": "outputs/audits/winvoker_preprocessing_profiles_v2/profile_fingerprints.json"
+  },
+  "historic_split": {
+    "split_seed": 42,
+    "method": "stratified 80/20 followed by stratified 90/10 development split",
+    "train_rows": 317288,
+    "validation_rows": 35255,
+    "test_rows": 88136,
+    "test_split_id": "winvoker-historic-split42-test",
+    "assignments_path": "outputs/audits/historic_split_lineage_v1/split_assignments.csv",
+    "assignments_sha256": "085af50ef3c28c2b50696d5cb2dfb6f0d95289eeed7ffb65f2b4315778526839"
+  },
+  "strict_test": {
+    "rows": 87632,
+    "mask_path": "outputs/audits/historic_split_lineage_v1/test_inclusion_mask.csv",
+    "mask_sha256": "635f28535111efec1baeae4b9ba2e3f28b7dde8faa6240cf4b9afdad86de5999"
+  },
+  "required_evaluation_views": [
+    "historic_test_complete",
+    "historic_test_strict",
+    "polarity_only_complete",
+    "polarity_only_strict",
+    "source_complete:<source>",
+    "source_strict:<source>"
+  ]
+}

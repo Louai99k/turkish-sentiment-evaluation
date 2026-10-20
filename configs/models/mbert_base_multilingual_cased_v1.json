@@ -1,0 +1,27 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "mbert",
+  "model_id": "google-bert/bert-base-multilingual-cased",
+  "model_revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "tokenizer_id": "google-bert/bert-base-multilingual-cased",
+  "tokenizer_revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "license": "Apache-2.0",
+  "architecture_family": "BERT",
+  "casing": "cased",
+  "language": "Multilingual (104 languages, including Turkish)",
+  "parameter_count_display": "178M (approximate; runtime count is recorded per run)",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel pooled output followed by project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "pooler_output",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/google-bert/bert-base-multilingual-cased",
+  "official_commit_page": "https://huggingface.co/google-bert/bert-base-multilingual-cased/commit/3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "original_paper": "https://arxiv.org/abs/1810.04805",
+  "verified_on": "2026-09-08",
+  "verification_note": "Canonical cased multilingual BERT base checkpoint; immutable revision and tokenizer configuration verified from the official Hugging Face repository."
+}

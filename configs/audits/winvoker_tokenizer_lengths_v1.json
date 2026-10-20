@@ -1,0 +1,52 @@
+{
+  "schema_version": "tokenizer-length-audit-config-v1.0",
+  "run_id": "winvoker_tokenizer_lengths_v1",
+  "dataset_id": "winvoker/turkish-sentiment-analysis-dataset",
+  "dataset_revision": "4bd9103ad5f24d44db806d40c94c8b9ec116ad05",
+  "split_assignments": "outputs/audits/historic_split_lineage_v1/split_assignments.csv",
+  "fingerprint_manifest": "outputs/audits/winvoker_preprocessing_profiles_v2/profile_fingerprints.json",
+  "thresholds_including_special_tokens": [128, 256, 512],
+  "quantiles": [0.5, 0.9, 0.95, 0.99],
+  "tokenization": {
+    "add_special_tokens": true,
+    "truncation": false,
+    "padding": false,
+    "return_length": true,
+    "batch_size": 512
+  },
+  "report_slices": [
+    "overall",
+    "split",
+    "split_label",
+    "split_source"
+  ],
+  "combinations": [
+    {
+      "profile": "configs/preprocessing/winvoker_canonical_v1.json",
+      "model_configs": [
+        "configs/models/berturk_base_cased_v1.json",
+        "configs/models/berturk_base_uncased_v1.json",
+        "configs/models/mbert_base_multilingual_cased_v1.json",
+        "configs/models/xlm_roberta_base_v1.json"
+      ]
+    },
+    {
+      "profile": "configs/preprocessing/winvoker_canonical_emoji_preserve_v2.json",
+      "model_configs": [
+        "configs/models/berturk_base_cased_v1.json"
+      ]
+    },
+    {
+      "profile": "configs/preprocessing/winvoker_canonical_url_placeholder_v1.json",
+      "model_configs": [
+        "configs/models/berturk_base_cased_v1.json"
+      ]
+    },
+    {
+      "profile": "configs/preprocessing/winvoker_minimal_strip_v1.json",
+      "model_configs": [
+        "configs/models/berturk_base_cased_v1.json"
+      ]
+    }
+  ]
+}

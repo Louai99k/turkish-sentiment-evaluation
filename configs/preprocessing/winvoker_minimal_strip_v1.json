@@ -1,0 +1,26 @@
+{
+  "schema_version": "preprocessing-profile-v1.0",
+  "profile_id": "winvoker_minimal_strip_v1",
+  "description": "Minimal comparison profile: convert to text and trim outer whitespace only.",
+  "behavior": {
+    "html": "preserve",
+    "url": "preserve",
+    "mention": "preserve",
+    "punctuation": "preserve",
+    "emoji": "preserve",
+    "whitespace": "trim outer whitespace only",
+    "casing": "preserve"
+  },
+  "ordered_transformations": [
+    {
+      "order": 1,
+      "operation_id": "coerce_to_string",
+      "type": "coerce_to_string"
+    },
+    {
+      "order": 2,
+      "operation_id": "strip_outer_whitespace",
+      "type": "strip"
+    }
+  ]
+}

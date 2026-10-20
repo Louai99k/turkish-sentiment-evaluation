@@ -1,0 +1,27 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "berturk",
+  "model_id": "dbmdz/bert-base-turkish-cased",
+  "model_revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+  "tokenizer_id": "dbmdz/bert-base-turkish-cased",
+  "tokenizer_revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+  "license": "MIT",
+  "architecture_family": "BERT",
+  "casing": "cased",
+  "language": "Turkish",
+  "parameter_count_display": "0.1B",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel pooled output followed by project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "pooler_output",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/dbmdz/bert-base-turkish-cased",
+  "official_commit_page": "https://huggingface.co/dbmdz/bert-base-turkish-cased/commit/b6e1de16c983e0f2c70664591ea3f22810072608",
+  "original_paper": "https://arxiv.org/abs/2007.11127",
+  "verified_on": "2026-09-07",
+  "legacy_boundary": "Do not retroactively assign this revision to legacy runs whose resolved snapshot commit was not recorded. Require it for new protocol-v2 runs."
+}

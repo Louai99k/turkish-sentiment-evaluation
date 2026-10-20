@@ -1,0 +1,30 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "turkish_electra",
+  "model_id": "dbmdz/electra-base-turkish-cased-discriminator",
+  "model_revision": "44ba696463e4d853078f3094cec76ba4e924cfd1",
+  "tokenizer_id": "dbmdz/electra-base-turkish-cased-discriminator",
+  "tokenizer_revision": "44ba696463e4d853078f3094cec76ba4e924cfd1",
+  "license": "MIT",
+  "architecture_family": "ELECTRA discriminator",
+  "casing": "cased",
+  "language": "Turkish",
+  "parameter_count_display": "approximately 110M; exact project-head-inclusive count is recorded by the runtime preflight",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel first-token representation followed by the project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "first_token",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/dbmdz/electra-base-turkish-cased-discriminator",
+  "official_commit_page": "https://huggingface.co/dbmdz/electra-base-turkish-cased-discriminator/commit/44ba696463e4d853078f3094cec76ba4e924cfd1",
+  "original_paper": "https://openreview.net/forum?id=r1xMH1BtvB",
+  "provenance_repository": "https://github.com/stefan-it/turkish-bert",
+  "metadata_audit": "outputs/audits/turkish_transformer_checkpoint_candidates_v1/artifact_manifest.json",
+  "metadata_audit_manifest_sha256": "c50986033ce951ffd6df58c9def1d8d906a4371ec207c1751edda57359810b6b",
+  "verified_on": "2026-09-19",
+  "verification_note": "Metadata-eligible Turkish ELECTRA base discriminator; all ten immutable-revision, license, tokenizer, capacity, weight-availability, and Transformers-mapping checks passed. Weight loading and project runtime remain gated by a separate preflight."
+}

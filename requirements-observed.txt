@@ -1,0 +1,19 @@
+# Observed direct package versions for a post-review pinned BERTurk fit.
+# NOT a complete transitive lock, supported installation guarantee, or claim
+# that all historical runs used these versions. See docs/ENVIRONMENT.md.
+# Install the appropriate torch distribution separately for the target hardware.
+transformers==5.16.1
+datasets==5.0.1
+huggingface-hub==1.30.0
+scikit-learn==1.7.2
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.9
+seaborn==0.13.2
+accelerate==1.14.0
+regex==2026.9.3
+# tqdm was observed in the bounded workspace check on 2026-10-20, not recorded
+# in the selected historical environment JSON. This pin is a check observation,
+# not a claim about all original fits.
+tqdm==4.70.0

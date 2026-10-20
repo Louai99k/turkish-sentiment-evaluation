@@ -1,0 +1,30 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "berturk",
+  "model_id": "dbmdz/bert-base-turkish-cased",
+  "model_revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+  "tokenizer_id": "dbmdz/bert-base-turkish-cased",
+  "tokenizer_revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+  "license": "MIT",
+  "architecture_family": "BERT",
+  "casing": "cased",
+  "language": "Turkish",
+  "parameter_count_display": "0.1B",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel pooler output then 768-to-256 linear, GELU, dropout, and 256-to-3 linear",
+  "project_head": {
+    "pooling": "pooler_output",
+    "dropout": 0.3,
+    "classifier": "mlp",
+    "hidden_size": 256,
+    "activation": "gelu",
+    "dropout_placement": "after_activation",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/dbmdz/bert-base-turkish-cased",
+  "official_commit_page": "https://huggingface.co/dbmdz/bert-base-turkish-cased/commit/b6e1de16c983e0f2c70664591ea3f22810072608",
+  "original_paper": "https://arxiv.org/abs/2007.11127",
+  "verified_on": "2026-09-07",
+  "legacy_boundary": "A new project head only; do not reinterpret accepted linear-head runs or checkpoints."
+}

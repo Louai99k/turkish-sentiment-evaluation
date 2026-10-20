@@ -1,0 +1,27 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "xlm_roberta",
+  "model_id": "FacebookAI/xlm-roberta-base",
+  "model_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "tokenizer_id": "FacebookAI/xlm-roberta-base",
+  "tokenizer_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "license": "MIT",
+  "architecture_family": "XLM-RoBERTa",
+  "casing": "SentencePiece/case-preserving",
+  "language": "Multilingual (100-language pretraining; model repository tags 94 languages)",
+  "parameter_count_display": "278M (approximate; runtime count is recorded per run)",
+  "maximum_position_embeddings": 514,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel first-token representation followed by project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "first_token",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/FacebookAI/xlm-roberta-base",
+  "official_commit_page": "https://huggingface.co/FacebookAI/xlm-roberta-base/commit/e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "original_paper": "https://arxiv.org/abs/1911.02116",
+  "verified_on": "2026-09-08",
+  "verification_note": "Canonical XLM-RoBERTa base checkpoint; immutable revision and tokenizer configuration verified from the official Hugging Face repository."
+}

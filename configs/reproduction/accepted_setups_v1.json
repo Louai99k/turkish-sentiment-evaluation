@@ -1,0 +1,135 @@
+{
+  "schema_version": "code-only-reproduction-recipes-v1",
+  "purpose": "Declare reported scientific setups without experimental outputs or historical acceptance gates",
+  "execution_status": "portable_preparation_and_explicit_fit_dispatch_implemented_user_checks_pending",
+  "historical_fit_identity_or_bitwise_reproduction_claimed": false,
+  "automatic_training_authorized": false,
+  "external_checkpoints_or_masks_may_change": false,
+  "dataset_config": "configs/datasets/winvoker_historic_v2.json",
+  "preprocessing_profile": "configs/preprocessing/winvoker_canonical_v1.json",
+  "preprocessing_fingerprints": "outputs/audits/winvoker_preprocessing_profiles_v2/profile_fingerprints.json",
+  "split_seed": 42,
+  "training_seeds_for_stochastic_families": [42, 52, 62, 72, 82],
+  "primary_test_view": "historic_test_complete",
+  "sensitivity_test_view": "historic_test_strict",
+  "selection_metric": "validation_weighted_f1",
+  "tie_policy": "retain_earliest_epoch",
+  "fit_scope": "train_only",
+  "fresh_run_ids_required": true,
+  "tfidf_constructor": {
+    "max_features": 10000,
+    "ngram_range": [1, 2],
+    "min_df": 2
+  },
+  "classical_parameter_boundary": "These are constructor arguments from original source, not invented complete historical sklearn default records; SVM full recorded refit arguments are listed separately",
+  "neural_common": {
+    "max_length": 128,
+    "epochs": 3,
+    "dropout": 0.3,
+    "precision_mode": "float32",
+    "gradient_clip_max_norm": 1.0
+  },
+  "transformer_common": {
+    "batch_size": 32,
+    "learning_rate": 0.00002,
+    "early_stopping_patience": 2,
+    "optimizer": "torch.optim.AdamW",
+    "weight_decay": 0.01,
+    "adam_betas": [0.9, 0.999],
+    "adam_epsilon": 1e-8,
+    "scheduler": "linear",
+    "warmup_steps": 0,
+    "classifier": "linear",
+    "class_weights_when_used": "N/(3*N_class), computed from training labels only",
+    "checkpoint_and_tokenizer_identity": "Use each referenced model configuration's full immutable revisions and declared pooling; no mutable main revision",
+    "selection_boundary": "Validation checkpoint selection within each fit; no external/test outcomes select a fresh run. Historical external roster eligibility is not recreated or changed."
+  },
+  "setups": {
+    "tfidf_logreg": {
+      "family": "classical",
+      "estimator": "sklearn.linear_model.LogisticRegression",
+      "constructor_arguments": {"max_iter": 1000, "class_weight": "balanced", "random_state": 42},
+      "replication": "deterministic_single_configuration",
+      "training_seed_sweep": false,
+      "random_state_interpretation": "implementation provenance; lbfgs does not create distinct stochastic training fits"
+    },
+    "tfidf_svm": {
+      "family": "classical",
+      "estimator": "sklearn.svm.LinearSVC",
+      "constructor_arguments": {
+        "C": 1.0, "class_weight": "balanced", "dual": "auto", "fit_intercept": true,
+        "intercept_scaling": 1, "loss": "squared_hinge", "max_iter": 1000,
+        "multi_class": "ovr", "penalty": "l2", "random_state": 42, "tol": 0.0001, "verbose": 0
+      },
+      "replication": "one_fixed_configuration_with_recorded_random_state",
+      "training_seed_sweep": false,
+      "provenance_boundary": "Use the accepted complete-record refit's setup; a new fit does not restore original historical records or replace the frozen external SVM"
+    },
+    "tfidf_nb": {
+      "family": "classical",
+      "estimator": "sklearn.naive_bayes.MultinomialNB",
+      "constructor_arguments": {},
+      "replication": "deterministic_single_configuration",
+      "training_seed_sweep": false
+    },
+    "tfidf_rf": {
+      "family": "classical",
+      "estimator": "sklearn.ensemble.RandomForestClassifier",
+      "constructor_arguments": {"n_estimators": 300, "class_weight": "balanced", "n_jobs": -1},
+      "random_state": "requested_training_seed",
+      "replication": "five_locked_training_seeds"
+    },
+    "fasttext_logreg": {
+      "family": "fasttext",
+      "estimator": "sklearn.linear_model.LogisticRegression",
+      "replication": "deterministic_single_configuration",
+      "training_seed_sweep": false,
+      "random_state_interpretation": "implementation provenance only; no five-seed mean or variance",
+      "classifier_arguments": {
+        "C": 1.0, "class_weight": "balanced", "dual": false, "fit_intercept": true,
+        "intercept_scaling": 1, "l1_ratio": null, "max_iter": 1000, "n_jobs": null,
+        "penalty": "l2", "random_state": 42, "solver": "lbfgs", "tol": 0.0001,
+        "verbose": 0, "warm_start": false
+      },
+      "historical_deprecated_argument": {"multi_class": "deprecated"},
+      "vector_dimension": 300,
+      "vector_archive_acquisition": "Acquire upstream Turkish fastText vectors separately under their own terms; no assets included",
+      "vocabulary": "train tokens from str(text).split(), expanded by each token's Python str.lower(); never validation/test tokens",
+      "lookup": "exact token then lowercase fallback",
+      "pooling": "arithmetic mean of matched float32 vectors, ignore unmatched tokens; zero vector when none match",
+      "subword_oov_generation": false,
+      "feature_scaling": false,
+      "feature_helpers": "scripts.run_fasttext_train_vocab_refit.freeze_train_vocabulary/load_vectors/vectorize; historical main remains private-gated"
+    },
+    "bilstm": {
+      "family": "bilstm",
+      "replication": "five_locked_training_seeds",
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "adam_epsilon": 1e-8,
+      "min_freq": 2,
+      "max_vocab_size": 100000,
+      "embedding_dim": 300,
+      "hidden_dim": 128,
+      "num_classes": 3,
+      "loss": "balanced_weighted_cross_entropy",
+      "class_weights": "training labels only",
+      "vocabulary_fit_scope": "train_only"
+    },
+    "berturk_standard_ce": {"family": "transformer", "model_config": "configs/models/berturk_base_cased_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"},
+    "berturk_weighted_ce": {"family": "transformer", "model_config": "configs/models/berturk_base_cased_v1.json", "loss": "weighted", "replication": "five_locked_training_seeds"},
+    "mbert_standard_ce": {"family": "transformer", "model_config": "configs/models/mbert_base_multilingual_cased_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"},
+    "xlm_roberta_standard_ce": {"family": "transformer", "model_config": "configs/models/xlm_roberta_base_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"},
+    "turkish_electra_standard_ce": {"family": "transformer", "model_config": "configs/models/turkish_electra_base_cased_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"},
+    "distilberturk_standard_ce": {"family": "transformer", "model_config": "configs/models/distilberturk_base_cased_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"},
+    "convberturk_standard_ce": {"family": "transformer", "model_config": "configs/models/convberturk_base_cased_v1.json", "loss": "unweighted", "replication": "five_locked_training_seeds"}
+  },
+  "scope_limits": [
+    "Fixed reported configurations are provided for new independently identified replications, not automatic reruns or new claims",
+    "Do not describe nonsignificance as equivalence or combine original confirmatory and sensitivity analyses",
+    "No external checkpoint reselection, mask changes, generated scores, predictions, datasets or trained models are included",
+    "Historical provenance gates are not portable execution approval and must not be fabricated",
+    "Descriptive attention/projection/curve workflows require separately selected checkpoints and locally generated lineage/score inputs"
+  ]
+}

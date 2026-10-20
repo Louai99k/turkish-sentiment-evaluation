@@ -1,0 +1,32 @@
+{
+  "schema_version": "preprocessing-corpus-audit-config-v1.0",
+  "run_id": "winvoker_preprocessing_profiles_v2",
+  "dataset_id": "winvoker/turkish-sentiment-analysis-dataset",
+  "dataset_revision": "4bd9103ad5f24d44db806d40c94c8b9ec116ad05",
+  "upstream_split": "train",
+  "split_assignments": "outputs/audits/historic_split_lineage_v1/split_assignments.csv",
+  "profiles": [
+    "configs/preprocessing/winvoker_canonical_v1.json",
+    "configs/preprocessing/winvoker_canonical_emoji_preserve_v2.json",
+    "configs/preprocessing/winvoker_canonical_url_placeholder_v1.json",
+    "configs/preprocessing/winvoker_minimal_strip_v1.json"
+  ],
+  "feature_patterns": {
+    "url": {
+      "engine": "python_re",
+      "pattern": "https?://\\S+|www\\.\\S+"
+    },
+    "emoji_sequence": {
+      "engine": "regex_v1",
+      "pattern": "(?V1)(?:[#*0-9]\\uFE0F?\\u20E3|\\p{Regional_Indicator}{2}|(?:\\p{Extended_Pictographic}|\\p{Emoji_Presentation})(?:\\uFE0F|\\p{Emoji_Modifier})?(?:\\u200D(?:\\p{Extended_Pictographic}|\\p{Emoji_Presentation})(?:\\uFE0F|\\p{Emoji_Modifier})?)*)"
+    }
+  },
+  "prevalence_slices": [
+    "overall",
+    "split",
+    "split_label",
+    "split_source"
+  ],
+  "manual_example_limit_per_feature_split": 20,
+  "canonical_equivalence_reference": "src.data_loader.clean_text"
+}

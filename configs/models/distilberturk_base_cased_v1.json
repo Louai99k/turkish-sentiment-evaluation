@@ -1,0 +1,30 @@
+{
+  "schema_version": "model-config-v2.0",
+  "model_family": "distilberturk",
+  "model_id": "dbmdz/distilbert-base-turkish-cased",
+  "model_revision": "8ecd4d034c2612d4c5940795b4f2552a9f3543d6",
+  "tokenizer_id": "dbmdz/distilbert-base-turkish-cased",
+  "tokenizer_revision": "8ecd4d034c2612d4c5940795b4f2552a9f3543d6",
+  "license": "MIT",
+  "architecture_family": "DistilBERT",
+  "casing": "cased",
+  "language": "Turkish",
+  "parameter_count_display": "approximately 68.1M; exact project-head-inclusive count is recorded by the runtime preflight",
+  "maximum_position_embeddings": 512,
+  "base_pretrained_checkpoint": true,
+  "classification_compatibility": "AutoModel first-token representation followed by the project dropout and linear three-class head",
+  "project_head": {
+    "pooling": "first_token",
+    "dropout": 0.3,
+    "classifier": "linear",
+    "num_classes": 3
+  },
+  "official_model_page": "https://huggingface.co/dbmdz/distilbert-base-turkish-cased",
+  "official_commit_page": "https://huggingface.co/dbmdz/distilbert-base-turkish-cased/commit/8ecd4d034c2612d4c5940795b4f2552a9f3543d6",
+  "original_paper": "https://arxiv.org/abs/1910.01108",
+  "provenance_repository": "https://github.com/stefan-it/turkish-bert",
+  "metadata_audit": "outputs/audits/turkish_transformer_checkpoint_candidates_v1/artifact_manifest.json",
+  "metadata_audit_manifest_sha256": "c50986033ce951ffd6df58c9def1d8d906a4371ec207c1751edda57359810b6b",
+  "verified_on": "2026-09-19",
+  "verification_note": "Metadata-eligible cased DistilBERTurk base checkpoint; all ten immutable-revision, license, tokenizer, capacity, weight-availability, and Transformers-mapping checks passed. Weight loading and project runtime remain gated by a separate preflight."
+}

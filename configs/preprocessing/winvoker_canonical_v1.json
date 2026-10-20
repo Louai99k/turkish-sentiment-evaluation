@@ -1,0 +1,69 @@
+{
+  "schema_version": "preprocessing-profile-v1.0",
+  "profile_id": "winvoker_canonical_v1",
+  "description": "Exact configuration form of the historical manuscript-aligned src.data_loader.clean_text behavior.",
+  "behavior": {
+    "html": "remove",
+    "url": "remove",
+    "mention": "remove",
+    "punctuation": "remove standalone noise except exclamation and question marks",
+    "emoji": "removed when matched by the standalone punctuation-noise expression",
+    "whitespace": "collapse and trim",
+    "casing": "preserve"
+  },
+  "ordered_transformations": [
+    {
+      "order": 1,
+      "operation_id": "coerce_to_string",
+      "type": "coerce_to_string"
+    },
+    {
+      "order": 2,
+      "operation_id": "strip_outer_whitespace_before_substitution",
+      "type": "strip"
+    },
+    {
+      "order": 3,
+      "operation_id": "remove_html_tags",
+      "type": "regex_substitution",
+      "engine": "python_re",
+      "pattern": "<[^>]+>",
+      "replacement": " "
+    },
+    {
+      "order": 4,
+      "operation_id": "remove_urls",
+      "type": "regex_substitution",
+      "engine": "python_re",
+      "pattern": "https?://\\S+|www\\.\\S+",
+      "replacement": " "
+    },
+    {
+      "order": 5,
+      "operation_id": "remove_mentions",
+      "type": "regex_substitution",
+      "engine": "python_re",
+      "pattern": "(?<!\\w)@\\w+",
+      "replacement": " "
+    },
+    {
+      "order": 6,
+      "operation_id": "remove_standalone_punctuation_noise",
+      "type": "regex_substitution",
+      "engine": "python_re",
+      "pattern": "(?u)(?<!\\w)[^\\w\\s!?]+(?!\\w)",
+      "replacement": " "
+    },
+    {
+      "order": 7,
+      "operation_id": "collapse_whitespace",
+      "type": "collapse_whitespace",
+      "replacement": " "
+    },
+    {
+      "order": 8,
+      "operation_id": "strip_outer_whitespace_after_substitution",
+      "type": "strip"
+    }
+  ]
+}
